@@ -1,4 +1,12 @@
 package pl.lucky.dao;
 
-public class BookDao {
+import pl.lucky.model.Book;
+
+public interface BookDao {
+
+    void save(Book book);
+
+    Book get(Long id);
+
+    void cleanUp();
 }
